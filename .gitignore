@@ -1,1 +1,16 @@
 .DS_Store
+.dart_tool/
+analysis_options.yaml
+.metadata
+android/
+ios/
+linux/
+macos/
+web/
+windows/
+pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+*.iml
+README.md
