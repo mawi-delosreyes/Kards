@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:kards/database/Database.dart';
+import 'package:kards/database/dao/KardsDao.dart';
+import 'package:kards/screens/baccarat/Baccarat.dart';
+import 'package:sqflite/sqflite.dart';
+
 
 void main() {
-  runApp(const MainApp());
+  //initialize().initDB();
+  runApp(const BaccaratScreen());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+class initialize {  
+  void initDB() async{
+      KardsDao().dbHelper.getDatabase;
+    }
 }
